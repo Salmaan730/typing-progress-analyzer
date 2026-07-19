@@ -43,6 +43,6 @@ def shaky_keys(data, min_hits=50):
         print(f"  '{key}': {rate:.3f} miss rate, {key_hits[key]} hits")
 
 if __name__ == "__main__":
-    data = load_data("stats.txt")
+    data = load_data("typing-data.json")
     speed_summary(data)
     shaky_keys(data)
